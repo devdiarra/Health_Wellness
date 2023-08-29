@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    <title>H&W</title>
+</head>
+
+<body>
+    <nav class="bg-gray-400 w-full">
+        <div class="container flex justify-between items-center max-w-6xl mx-auto py-8">
+            <div class="logo">
+                <a href="" class="logo-brand text-3xl">Health&Wellness</a>
+            </div>
+            <div class="items">
+                <a href="#" class="mr-2 nav-item text-xl">Services</a>
+                <a href="#" class="mr-2 nav-item text-xl">About</a>
+                <a href="#" class="mr-2 nav-item text-xl">Contact</a>
+                <a href="#" class="mr-2 nav-item text-xl">Login</a>
+                <a href="#" class="mr-2 nav-item text-xl">Register</a>
+            </div>
+        </div>
+    </nav>
+    <div class="s-ntwk flex flex-col fixed top-[50%] translate-y-[-50%] left-[2rem]" id="s-ntwk">
+        <span><i class='bx bxl-facebook text-3xl rounded-circle p-5 text-blue-800'></i></span>
+        <span class=""><i
+                class='bx bxl-linkedin-square text-3xl text-center rounded-circle p-5 text-blue-800'></i></span>
+        <span class=""><i class='bx bxl-instagram text-3xl text-center rounded-circle p-5 text-blue-800'></i></span>
+    </div>
+    {% block main %}
+    {% endblock main %}
+    <footer class="w-full bg-gray-400">
+        <div class="container max-w-6xl mx-auto flex justify-between items-center">
+            <div class="f-logo">
+                <a href="#" class="text-3xl">Health&Wellness</a>
+            </div>
+            <div class="f-contenu">
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy and policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block main %}
+<section id="main" class="main bg-white">
+    <div class="container max-w-6xl mx-auto">
+        <div class="grid grid-cols-2">
+            <div class="hero-text py-8 flex flex-col justify-center items-start space-y-4" data-aos="fade-up"
+                data-aos-duration="500">
+                <h1 class="text-5xl font-extrabold text-blue-800">Nous sommes là pour vous</h1>
+                <p class="text-black text-lg">Your mental health is important. Some days are better than others and we
+                    all need
+                    a helping hand from
+                    time to time.
+                </p>
+                <p class="text-black text-lg">Wherever you are in your mental health journey, we'll be here to help.</p>
+                <button class="bg-blue-800 text-white p-5 rounded-lg text-xl">Trouve de l'aide pour ta sante mentale
+                    aujourd'hui</button>
+            </div>
+            <div class="hero-img">
+                <img src="{% static 'assets/hero.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======= Clients Section ======= -->
+<section id="clients" class="clients bg-gray-100">
+    <div class="container mx-auto" data-aos="zoom-in">
+        <div class="flex items-center justify-center py-6">
+            <div class="xl:w-1/6 md:w-1/4 sm:w-1/2">
+                <img src="{% static 'assets/rayplus.png' %}" class="object-cover w-50 h-10">
+            </div>
+            <div class="xl:w-1/6 md:w-1/4 sm:w-1/2">
+                <img src="{% static 'assets/Logo-noir1.png' %}" class="object-cover h-10 w-50">
+            </div>
+            <div class="xl:w-1/6 md:w-1/4 sm:w-1/2">
+                <img src="{% static 'assets/client-3.png' %}" class="w-25 h-10 object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Clients Section -->
+
+<section id="help" class="help bg-white">
+    <div class="container max-w-6xl mx-auto py-10">
+        <div class="grid grid-cols-2 gap-4 py-10">
+            <div class="col-1 flex items-center ps-4" data-aos="fade-right">
+                <h1 class="text-2xl text-blue-800 font-bold">
+                    Comment pouvons-nous vous soutenir?
+                </h1>
+            </div>
+            <div class="col-1" data-aos="fade-left">
+                <ul class="space-y-4 divide-y-2 arrows">
+                    <li class="py-6 px-4 flex justify-between items-center text-2xl font-bold hover:bg-blue-800">
+                        <a href="" class="text-blue-800 text-2xl relative">
+                            <span class="arrows">Trouver un particulier à qui parler.</span>
+                        </a>
+                        <span class="me-6"><i class='bx bx-arrow-back bx-rotate-180 text-blue-800 text-2xl'></i></span>
+                    </li>
+                    <li class="py-6 px-4 flex justify-between items-center text-2xl font-bold hover:bg-blue-800">
+                        <a href="" class="text-blue-800 text-2xl relative help-link">
+                            <span class="arrows">Parler à un professionnel de la santé mentale(un Psy).</span>
+                        </a>
+                        <span><i class='bx bx-arrow-back bx-rotate-180 text-blue-800 text-2xl me-6'></i></span>
+                    </li>
+                    <li
+                        class="py-6 px-4 hover:bg-blue-800 hover:text-white flex justify-between items-center text-2xl font-bold">
+                        <a href="" class="text-blue-800 text-2xl relative">
+                            <span class="arrows">Verifier ma santé mentale.</span>
+                        </a>
+                        <span class="me-6"><i class='bx bx-arrow-back bx-rotate-180 text-blue-800 text-2xl'></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock main %}
