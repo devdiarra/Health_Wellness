@@ -18,7 +18,7 @@
                     aujourd'hui</button>
             </div>
             <div class="hero-img">
-                <img src="{% static 'assets/hero.png' %}" alt="">
+                <img src="{% static 'assets/hero-1.png' %}" alt="">
             </div>
         </div>
     </div>
@@ -75,4 +75,176 @@
         </div>
     </div>
 </section>
+<!-- Section video -->
+<section class="video-pub relative py-10 bg-white max-w-6xl mx-auto" id="video-pub">
+    <div class="container">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="col-1 flex flex-col justify-center space-y-4">
+                <h1 class="text-3xl font-bold text-blue-800">L'ONG Health & Wellness est à votre service</h1>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi, nihil voluptas rerum
+                    voluptatibus fugiat atque maiores doloremque eaque inventore.
+                </p>
+            </div>
+            <div class="col-1 ">
+                <div class="p-5">
+                    <video autoplay loop plays-inlined muted controls>
+                        <source src="{% static 'assets/healh.mp4' %}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- end section-->
+<!-- Section service -->
+<section id="service" class="service bg-white py-10">
+    <div class="container mx-auto space-y-4 max-w-6xl">
+        <div class="title mb-[2.5rem]">
+            <h2 class="text-3xl font-bold text-center text-blue-800">Ce que nous proposons</h2>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="col-1 border-solid border-2 border-blue-800 rounded-lg p-5" data-aos="fade-left">
+                <div class="card space-y-6 px-8 py-6">
+                    <img src="{% static 'assets/lear.svg' %}" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h1 class="text-2xl font-bold text-blue-800 mb-4">Apprendrez des autres.</h1>
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorum inventore a
+                                fuga dolorem excepturi voluptate quaerat? Animi, quae minus perferendis fugiat eos,
+                                impedit eligendi vel minima laboriosam ipsum aperiam.</p>
+                        </div>
+                        <button class="bg-blue-800 text-xl text-white rounded-lg mt-4 p-4">Rejoingnez notre
+                            forum</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 border-solid border-2 border-blue-800 rounded-lg p-5" data-aos="fade-up">
+                <div class="card space-y-6 px-8 py-6">
+                    <img src="{% static 'assets/write.png' %}" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h1 class="text-2xl font-bold text-blue-800 mb-4">Histoires inspirantes</h1>
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorum inventore a
+                                fuga dolorem excepturi voluptate quaerat? Animi, quae minus perferendis fugiat eos,
+                                impedit eligendi vel minima laboriosam ipsum aperiam.</p>
+
+                        </div>
+                        <button class="bg-blue-800 text-xl text-white rounded-lg mt-4 p-3">Decouvrez des
+                            temoignages</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 border-solid border-2 border-blue-800 rounded-lg p-5" data-aos="fade-right">
+                <div class="card space-y-6 px-8 py-6">
+                    <img src="{% static 'assets/volumter.svg' %}" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h1 class="text-2xl font-bold text-blue-800 mb-4">Representer l'ONG</h1>
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorum inventore a
+                                fuga dolorem excepturi voluptate quaerat? Animi, quae minus perferendis fugiat eos,
+                                impedit eligendi vel minima laboriosam ipsum aperiam.</p>
+                        </div>
+                        <button class="bg-blue-800 text-xl text-white rounded-lg mt-4 p-4">Soyez volontaire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section -->
+<!--Start section testimonials -->
+<section class="testmonial py-10" id="testmonial">
+    <div class="container max-w-6xl mx-auto space-y-4">
+        <h1 class="text-2xl font-bold text-blue-800 text-center">Temoignages</h1>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="col-1 px-4 py-6">
+                <div class="card space-y-4 px-8 py-4">
+                    <img src="{% static 'assets/temoin-3.jpg' %}" alt="" class="img-fluid rounded-ful text-center">
+                    <div class="card-body text-blue-700 font-bold my-4">
+                        <h1 class="p-name text-xl font-bold">Sarah</h1>
+                        <span class="italic text-blue-400">[35 ans]</span>
+                    </div>
+                    <div class="exp">
+                        <h2 class="text-blue-700 underline mb-4">Experience:</h2>
+                        <p>
+                            Sarah a souffert de dépression pendant plusieurs années. Elle décrit son expérience comme
+                            une sensation d'épuisement
+                            constant, de tristesse profonde et de perte d'intérêt pour les activités qu'elle aimait
+                            autrefois. Elle se sentait
+                            souvent isolée, même en présence d'amis et de sa famille. Le simple fait de sortir du lit
+                            était un défi quotidien pour
+                            elle. Sarah a finalement cherché de l'aide professionnelle et a suivi une combinaison de
+                            thérapie et de médicaments, ce
+                            qui lui a permis de commencer à récupérer et à retrouver un sentiment de normalité dans sa
+                            vie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 px-4 py-6">
+                <div class="card space-y-4 px-8 py-4">
+                    <img src="{% static 'assets/temoin-2.jpg' %}" alt="">
+                    <div class="card-body text-blue-700 my-4 font-bold">
+                        <h1 class="p-name text-xl font-bold">Amina</h1>
+                        <span class="italic text-blue-400">[21 ans]</span>
+                    </div>
+                    <div class="exp">
+                        <h2 class="text-blue-700 underline mb-4">Experience:</h2>
+                        <p>
+                            Amina a lutté contre la dépression pendant son adolescence. Elle se sentait souvent
+                            submergée par une tristesse
+                            inexplicable et évitait de passer du temps avec ses amis et sa famille. Elle avait également
+                            des pensées négatives
+                            constantes à propos d'elle-même et de son avenir. Amina a eu le courage de parler à ses
+                            parents de ce qu'elle
+                            ressentait, et ils l'ont soutenue pour qu'elle obtienne de l'aide professionnelle. Elle a
+                            participé à des séances de
+                            thérapie individuelle et a également rejoint un groupe de soutien pour les jeunes confrontés
+                            à des problèmes similaires.
+                            Grâce à ces ressources et à son engagement à se rétablir, Amina a réussi à surmonter sa
+                            dépression et à développer des
+                            compétences pour faire face aux moments difficiles.
+
+                            Il est important de noter que chaque personne vivant une dépression a une expérience unique,
+                            et ces témoignages ne
+                            représentent qu'une petite partie de la diversité des expériences vécues par les personnes
+                            atteintes de dépression. Si
+                            vous ou quelqu'un que vous connaissez êtes confronté à des symptômes de dépression, il est
+                            recommandé de chercher l'aide
+                            d'un professionnel de la santé mentale.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 px-4 py-6">
+                <div class="card space-y-4 px-8 py-4">
+                    <img src="{% static 'assets/temoin-1.jpg' %}" alt="">
+                    <div class="card-body text-blue-700 font-bold my-4">
+                        <h1 class="p-name text-xl font-bold">David</h1>
+                        <span class="italic text-blue-400">[28 ans]</span>
+                    </div>
+                    <div class="exp">
+                        <h2 class="text-blue-700 underline mb-4">Experience:</h2>
+                        <p>
+                            David a connu une dépression après avoir perdu son emploi et traversé une rupture amoureuse
+                            difficile. Il décrit sa
+                            dépression comme une sensation constante de vide et de désespoir. Il avait du mal à se
+                            concentrer et à trouver un sens à
+                            sa vie. Les choses qu'il aimait auparavant ne lui apportaient plus de plaisir. David a
+                            commencé à voir un thérapeute qui
+                            l'a aidé à élaborer des stratégies pour faire face au stress, à gérer ses émotions et à
+                            travailler sur sa confiance en
+                            lui. Avec le temps, il a pu reconstruire sa vie en trouvant un nouvel emploi et en
+                            développant de nouvelles relations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--end section -->
 {% endblock main %}

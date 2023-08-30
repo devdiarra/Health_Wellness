@@ -8,9 +8,8 @@
     font-size: 16px;
 }
 
-body {
-    background: #000;
-    color: aliceblue;
+.nav {
+    border-bottom: 1px solid navy;
 }
 
 .s-ntwk span {
@@ -21,4 +20,11 @@ body {
 
 ul.arrows li:hover a, ul.arrows li:hover span i{
     color: #fff;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
 }
