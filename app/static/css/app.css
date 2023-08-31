@@ -28,3 +28,7 @@ ul.arrows li:hover a, ul.arrows li:hover span i{
     object-fit: cover;
     border-radius: 50%;
 }
+
+.contact span {
+    border-radius: 50%;
+}
