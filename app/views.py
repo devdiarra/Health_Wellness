@@ -1,3 +1,13 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def home(request):
+    pass
+
+
+def about(requet):
+    pass
+
+
+def contact(request):
+    pass
