@@ -17,7 +17,7 @@
     <nav class="w-full nav shadow-lg">
         <div class="container flex justify-between items-center max-w-6xl mx-auto py-8">
             <div class="logo">
-                <a href="" class="logo-brand text-3xl">Health&Wellness</a>
+                <a href="" class="logo-brand">Health&Wellness</a>
             </div>
             <div class="items">
                 <a href="#" class="mr-2 nav-item text-xl">Services</a>
@@ -36,22 +36,105 @@
     </div>
     {% block main %}
     {% endblock main %}
-    <footer class="w-full bg-gray-400">
-        <div class="container max-w-6xl mx-auto flex justify-between items-center">
-            <div class="f-logo">
-                <a href="#" class="text-3xl">Health&Wellness</a>
+    <footer id="footer" class="footer">
+        <div class="footer-top">
+            <div class="container mx-auto">
+                <div class="row">
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-4">
+                            <div class="footer-info">
+                                <h3>Health & Wellness</h3>
+                                <p>
+                                    La sante notre priorité <br>
+                                    Abidjan/Koumassi <br>
+                                    <br>
+                                    <strong>phone:</strong>
+                                    +225 07 05 43 27 67 <br>
+                                    <strong>email:</strong> contact@ngo-healthwellness.org
+                                </p>
+                                <div class="social-links mt-3">
+                                    <a href="" class="twitter">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                    <a href="" class="linkedIn">
+                                        <i class='bx bxl-linkedin'></i>
+                                    </a>
+                                    <a href="" class="facebook">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                    <a href="" class="youtube">
+                                        <i class='bx bxl-youtube'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-2 footer-links">
+                            <h4>Liens utils</h4>
+                            <ul>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">home</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">A propos de nous</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Terme de confidentialité</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Policy Privacy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-span-2 footer-links">
+                            <h4>Nos services</h4>
+                            <ul>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Consultation</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Confession</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Aide psychologique</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-span-4 footer-newsletter">
+                            <h4>Notre Newsletter</h4>
+                            <p>Ecrivez vous pour avoir pour ne pas louper nos activiter.</p>
+                            <form action="">
+                                <input type="email" name="email">
+                                <input type="submit" value="Souscrire">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="f-contenu">
-                <ul>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Privacy and policy</a></li>
-                </ul>
+
+        </div>
+        <div class="container py-4 max-w-6xl mx-auto">
+            <div class="copyright">
+                &copy;copyright
+                <strong>Health & Wellness </strong>
+                . All right reserved
             </div>
         </div>
     </footer>
-
+    <!-- end footer -->
+    <a href="#" class="back-to-top flex items-center justify-center active">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
