@@ -2,7 +2,7 @@
 
 {% load static %}
 {% block main %}
-<section id="main" class="main bg-white">
+<section id="main" class="main bg-blue-200">
     <div class="container max-w-6xl mx-auto">
         <div class="grid grid-cols-2">
             <div class="hero-text py-8 flex flex-col justify-center items-start space-y-4" data-aos="fade-up"
@@ -252,24 +252,61 @@
     <div class="container py-10 max-w-6xl mx-auto">
         <h1 class="text-2xl font-bold text-blue-800 text-center mb-8">Contacts</h1>
         <div class="grid grid-cols-3 gap-4">
-            <div class="col-1 shadow-lg flex flex-col items-center justify-between space-y-4 py-6">
-                <div class=""><i class="bi bi-geo-alt text-4xl text-blue-800"></i>
+            <div class="col-1">
+                <div class="info-box">
+                    <i class='bx bx-map'></i>
+                    <h2>Addresse</h2>
+                    <p>BP 45 Abidjan Plateau 1</p>
                 </div>
-                <h2 class="text-center text-2xl text-gray-500 font-bold">Notre Address</h2>
-                <p>BP 45 Abidjan Plateau 1</p>
             </div>
-            <div class="col-1 shadow-lg flex flex-col items-center justify-between space-y-4 py-6">
-                <div class="icons"><i class="bi bi-telephone-inbound text-4xl text-blue-800"></i></div>
-                <h2 class="text-center text-2xl text-gray-500 font-bold">Mobile</h2>
-                <p class="text-lg text-center text-gray-500">+225 07 09 09 09 09</p>
+
+            <div class="col-1">
+                <div class="info-box">
+                    <i class='bx bx-envelope'></i>
+                    <h2>Email</h2>
+                    <p>health@gmail.com</p>
+                </div>
             </div>
-            <div class="col-1 shadow-lg flex flex-col items-center justify-between space-y-4 py-6">
-                <div class="icons"><i class="bi bi-envelope text-4xl text-blue-800"></i></div>
-                <h2 class="text-center text-2xl text-gray-500 font-bold">Email</h2>
-                <p class="text-center text-gray-500 text-lg">health@gmail.com</p>
+            <div class="col-1">
+                <div class="info-box">
+                    <i class='bx bx-phone-call'></i>
+                    <h2>Mobile</h2>
+                    <p>+225 09 09 87 67 65</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 my-6">
+            <div class="col-1 p-4 mr-6 map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127118.28814877733!2d-4.062066707103601!3d5.348615523511576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ea5311959121%3A0x3fe70ddce19221a6!2z0JDQsdC40LTQttCw0L0sINCa0L7Rgi3QtCfQmNCy0YPQsNGA!5e0!3m2!1sru!2sru!4v1693674086488!5m2!1sru!2sru"
+                    style="border:0; width: 100%; height: 384px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-1 contact-form">
+                <form action="" class="mt-6">
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="col-1 ">
+                            <input type="text" class="info" name="nom" placeholder="Votre nom" required>
+                        </div>
+                        <div class="col-1">
+                            <input type="email" class="info" name="email" id="email" class="input"
+                                placeholder="Votre email">
+                        </div>
+                    </div>
+                    <div class="form-group mt-4">
+                        <input type="text" class="input" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group mt-4">
+                        <textarea name="message" id="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="text-center mt-6">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+
 </section>
 <!-- end section -->
 <!---->
