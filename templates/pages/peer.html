@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block main %}
+<section id="peer" class="peer">
+    <div class="peer-hero container max-w-6xl mx-auto">
+        <div class="grid grid-cols-3">
+            <div class="peer_grid hero-text col-span-2 flex flex-col h-[500px] justify-center space-y-4 ps-4">
+                <h1 class="text-5xl font-extrabold text-blue-800">Parler à un particulier.</h1>
+                <p class="text-lg">Nos problemes, nous ne sommes pas les seules personnes qui le vivre. <br> Ici trouver
+                    des
+                    personnes comme
+                    vous qui ont traversé des moments similaires.</p>
+            </div>
+            <div class="peer_grid hero-img pr-[2rem]">
+                <img src="{% static 'assets/talk.png' %}" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="container max-w-6xl mx-auto">
+        <div class="peer-card border border-blue-800 rounded-lg">
+            <img src="" alt="">
+            <div class="card">
+                <h1>Marlene</h1>
+                <div class="age">
+                    <span>28 ans</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </div>
+            <button class="p-4 text-white bg-blue-800">laisser lui un message</button>
+        </div>
+
+    </div>
+</section>
+{% endblock main %}
