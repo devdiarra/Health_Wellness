@@ -5,16 +5,18 @@
 {% block main %}
 <section id="peer" class="peer">
     <div class="peer-hero container max-w-6xl mx-auto">
-        <div class="grid grid-cols-3">
+        <div class="grid grid-cols-3 px-8">
             <div class="peer_grid hero-text col-span-2 flex flex-col h-[500px] justify-center space-y-4 ps-4">
-                <h1 class="text-5xl font-extrabold text-blue-800">Parler à un particulier.</h1>
-                <p class="text-lg">Nos problemes, nous ne sommes pas les seules personnes qui le vivre. <br> Ici trouver
-                    des
-                    personnes comme
-                    vous qui ont traversé des moments similaires.</p>
+                <h1 class="text-3xl font-extrabold text-blue-800">Trouver un professionnel de la santé mentale</h1>
+                <p class="text-lg">
+                    Trouver qui consulter pour soutenir votre santé mentale peut être difficile-psychologue –
+                    conseiller, psychiatre ou
+                    quelqu'un d'autre? Souvent, le meilleur endroit pour commencer est de parler à votre médecin
+                    généraliste.
+                </p>
             </div>
-            <div class="peer_grid hero-img pr-[2rem]">
-                <img src="{% static 'assets/talk.png' %}" alt="" class="img-fluid">
+            <div class="peer_grid hero-img pr-[2rem] flex items-center">
+                <img src="{% static 'assets/prof_th.svg' %}" alt="" class="img-fluid">
             </div>
         </div>
     </div>
@@ -31,7 +33,8 @@
                     <h1 class="text-3xl font-bold text-blue-800">Marlene</h1>
                     <div class="age text-blue-300 italic">
                         <span>28 ans</span> /
-                        <span>Assureur</span>
+                        <span>Medecin/psychatre</span> /
+                        <span>Abidjan - Yop</span>
                     </div>
                     <p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, magnam? ...</p>
                 </div>
@@ -43,18 +46,19 @@
                         <span><i class='bx bxs-star text-yellow-500'></i></span>
                         <span><i class='bx bxs-star-half text-yellow-500'></i></span>
                     </div>
-                    <button class="py-4 px-2 text-white bg-blue-800 text-center rounded-lg">laisser un message</button>
+                    <button class="py-4 px-2 text-white bg-blue-800 text-center rounded-lg">Appeler</button>
                 </div>
             </div>
             <div class="peer-card border border-blue-800 rounded-lg flex items-center justify-between p-6 mb-5">
                 <div class="peer-thumbnail">
-                    <img src="{% static 'assets/temoin-3.jpg' %}" alt="" class="img-fluid">
+                    <img src="{% static 'assets/temoin-1.jpg' %}" alt="" class="img-fluid">
                 </div>
                 <div class="card flex flex-col space-y-4 px-8">
                     <h1 class="text-3xl font-bold text-blue-800">Marlene</h1>
                     <div class="age text-blue-300 italic">
                         <span>28 ans</span> /
-                        <span>Assureur</span>
+                        <span>Psychologue</span> /
+                        <span>Bouake</span>
                     </div>
                     <p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, magnam? ...</p>
                 </div>
@@ -66,18 +70,17 @@
                         <span><i class='bx bxs-star text-yellow-500'></i></span>
                         <span><i class='bx bxs-star-half text-yellow-500'></i></span>
                     </div>
-                    <button class="py-4 px-2 text-white bg-blue-800 text-center rounded-lg">laisser un message</button>
+                    <button class="py-4 px-2 text-white bg-blue-800 text-center rounded-lg">Appeler</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- section categorie -->
 <section class="blog-article py-12" id="blog-article">
     <div class="container max-w-6l mx-auto px-12 space-y-6">
-        <div class="flex justify-between items-center">
-            <h1 class="text-xl text-blue-800 font-extrabold">Quelques articles...</h1>
-            <span class="text-blue-500">Voir plus</span>
+        <div class="flex justify-between">
+            <h1>Quelques articles...</h1>
+            <span>Voir plus</span>
         </div>
         <div class="grid grid-cols-3 gap-4">
             <div class="col-1 space-y-5 border border-gray-300 rounded-lg shadow-lg">
@@ -101,4 +104,5 @@
         </div>
     </div>
 </section>
+
 {% endblock main %}
